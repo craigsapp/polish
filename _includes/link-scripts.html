@@ -1,0 +1,86 @@
+<script src="/scripts/scripts-common.js"></script>
+<script>
+//
+// Programmer:		Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date:	Sun Oct  5 01:07:45 PDT 2014
+// Last Modified:	Thu Oct  9 13:31:29 PDT 2014
+// Filename:		.../links/scripts-local.html
+// Web Address:	http://arabic.sapp.org/links/scripts-local.html
+// Syntax:			JavaScript 1.8/ECMAScript 5
+// vim:				ts=3: ft=javascript
+//
+// Description:   JavaScript management of the links page.
+//
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- run this function when document has
+//      finished loading.
+//
+
+document.addEventListener('DOMContentLoaded', function() {
+	createLinks();
+	// buildAside();
+	// DecorateHeaderFooterLinks();
+}, false);
+
+
+
+/* 
+//////////////////////////////
+//
+// buildAside -- Copy H2 titles from content page into a list as HTML anchor
+// 	links in the right-hand sidebar.
+//
+
+function buildAside() {
+	var anchors = document.getElementById('anchors');
+   anchors.innerHTML = '<h2> Link categories </h2>';
+	var list = document.createElement('ul');
+	var h2s = document.querySelectorAll('article.about > h2');
+	for (var i=0; i<h2s.length; i++) {
+		var item = document.createElement('li');
+		var link = document.createElement('a');
+		link.setAttribute('href', '#link_' + i);
+		link.textContent = h2s[i].innerHTML;
+		item.appendChild(link);
+		list.appendChild(item);
+	}
+	anchors.appendChild(list);
+
+   // Place hyperlink anchors above each subject heading in the
+   // list of links.
+	var h2anchors = document.querySelectorAll('.h2anchor');
+	if (h2anchors.length == 0) {
+		for (i=0; i<h2s.length; i++) {
+			var anch = document.createElement('a');
+			anch.className = 'h2anchor';
+			anch.name = 'link_' + i;
+			var parent = h2s[i].parentNode;
+			parent.insertBefore(anch, h2s[i]);
+		}
+	}
+}
+
+*/
+
+
+//////////////////////////////
+//
+// createLinks -- Insert anchor link names for aside links. 
+//
+
+function createLinks() {
+	var links = document.querySelectorAll('dt');
+	for (var i=0; i<links.length; i++) {
+		var text = links[i].textContent;
+		var newtext = text.replace(/^https?:\/\//i, '');  
+		newtext = newtext.replace(/\/$/, '');  
+		var out = '<a target="new" href="' + text + '">' + newtext + '</a>';
+		links[i].innerHTML = out;
+	}
+}
+
+
+</script>

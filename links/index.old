@@ -1,0 +1,199 @@
+<html>
+
+	<head>
+		<title>Polish links</title>
+	</head>
+
+	<body>
+
+<script>
+//
+// Programmer:		Craig Stuart Sapp <craig@ccrma.stanford.edu>
+// Creation Date:	Sun Oct  5 01:07:45 PDT 2014
+// Last Modified:	Thu Oct  9 13:31:29 PDT 2014
+// Filename:		.../links/scripts-local.html
+// Web Address:	http://arabic.sapp.org/links/scripts-local.html
+// Syntax:			JavaScript 1.8/ECMAScript 5
+// vim:				ts=3: ft=javascript
+//
+// Description:   JavaScript management of the links page.
+//
+
+
+//////////////////////////////
+//
+// DOMContentLoaded event -- run this function when document has
+//      finished loading.
+//
+
+document.addEventListener('DOMContentLoaded', function() {
+	createLinks();
+}, false);
+
+
+
+//////////////////////////////
+//
+// createLinks -- Insert anchor link names for aside links. 
+//
+
+function createLinks() {
+	var links = document.querySelectorAll('dt.link');
+	for (var i=0; i<links.length; i++) {
+		var text = links[i].textContent;
+		var newtext = text.replace(/^https?:\/\//i, '');  
+		newtext = newtext.replace(/\/$/, '');  
+		var out = '<a target="new" href="' + text + '">' + newtext + '</a>';
+		links[i].innerHTML = out;
+	}
+}
+
+
+</script>
+
+		<div class="page container" id="home-page">
+			<section id="page-content">
+				<section style="padding-left:30px;" id="content">
+					
+<style>
+a  { letter-spacing: -1px; }
+dd { padding-bottom: 20px; }
+</style>
+
+<article class="about first">
+<h2> Alphabet </h2>
+
+<dl>
+
+<dt class=link> http://mowicpopolsku.com/polish-alphabet-pronunciation
+<dd> Polish alphabet and pronunciation guide.
+
+</dl>
+
+</article>
+
+<article class="about first">
+<h2> General </h2>
+
+<dl>
+
+<dt> http://www.bbc.co.uk/languages/polish/soap/facts.shtml
+<dd> 10 facts about the Polish language.
+
+
+</dl>
+
+<article class="about first">
+<h2> Dictionary/Vocabulary </h2>
+
+<dl>
+
+
+</dl>
+
+</article>
+
+
+
+<article class="about first">
+<h2> Grammar </h2>
+
+<dl>
+
+<dt class=link> http://polishgrammar.com/noun-case-identification-e1
+<dd> Polish grammar noun case identification exercise 1
+
+
+</dl>
+
+</article>
+
+
+
+<article class="about first">
+<h2> Wikipedia </h2>
+
+<dl>
+
+<dt class=link> https://en.wikipedia.org/wiki/Dialects_of_Polish
+<dd> Dialects of Polish
+
+<dt class=link>https://en.wikipedia.org/wiki/List_of_English_words_of_Polish_origin
+<dd> List of English words of Polish origin
+
+</dl>
+
+</article>
+
+
+
+<article class="about first">
+<h2> Youtube</h2>
+
+<dt class=link> https://www.youtube.com/watch?v=rnXYW1RcLUg
+<dd> Greetings in Polish (formal and informal)
+
+<dt> https://www.youtube.com/watch?v=QkbaWp5xN4E
+<dd> How to pronounce s &mdash; &sacute; &meash; sz.
+
+
+
+</article>
+
+
+
+<article class="about first">
+<h2> Books/Courses </h2>
+
+<dl>
+
+<dt class=link> http://polishgrammar.com
+<dd> A conversation about the great culture and languag of Poland.
+
+</dl>
+
+</article>
+
+
+
+<article class="about first">
+<h2> Music </h2>
+
+<dl>
+
+<dt class=link> http://www.theguardian.com/music/2012/jun/06/sounds-poland-history-10-songs
+<dd> Sounds of Poland &mdash; day one: a history of Polish pop in 10 songs.
+
+</dl>
+
+</article>
+
+
+
+<article class="about first">
+<h2> Radio/News</h2>
+
+<dl>
+
+<dt class=link> http://www.listenlive.eu/poland.html
+<dd> List of online Polish radio stations.
+
+</dl>
+
+</article>
+
+
+
+
+
+
+				</section>
+			</section>
+		</div>
+
+
+
+	</body>
+
+</html>
+<!-- vim: set ts=2: -->

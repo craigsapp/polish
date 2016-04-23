@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Polish Language Flashcards </title>
+</head>
+<body>
+
+<style>
+
+body {
+	background: #333333;
+	color:		#ffffff;
+}
+
+iframe {
+	width:	100%;
+	height:	100%;
+	border: 0;
+}
+
+</style>
+
+<iframe src="http://flashcards.sapp.org/?cards=card-sets/polish/word-of-the-day.aton"></iframe>
+
+</body>
+</html>
+
