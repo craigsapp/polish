@@ -1,9 +1,9 @@
 ##The website title
 name: Polish Language Resources
-##Markdown processor
+##Markdown processor:
 markdown: kramdown
-##syntax highlighter. change it to pygments
-highlighter: pygments
+##syntax highlighter:
+highlighter: rouge
 
 ##define base_url for valid usage in sitemap.xml and robots.txt
 base_url: http://example.com
