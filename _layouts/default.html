@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }} | {{ site.name }}</title>
+        <title class="bicolor"> {{ page.title }} | {{ site.name }}</title>
         {% if site.links.github %}
           <meta name="author" content="{{ site.links.github }}">
         {% endif %}
@@ -16,9 +16,6 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body class="wrap">
-      <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
       {% include header.html %}
       <section class="content">
         {{ content }}

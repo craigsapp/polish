@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+section.content {
+	margin: 20px;
+}
+
 /* HTML5 display definitions
 ========================================================================== */
 
@@ -423,3 +427,17 @@ td,
 th {
     padding: 0;
 }
+
+.black {
+	background: #333333;
+}
+
+.bicolor {
+	background-image: -webkit-linear-gradient(white 48%,#DC143C 49%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px black;
+}
+
+
+
