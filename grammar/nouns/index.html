@@ -1,0 +1,287 @@
+---
+layout: home
+title: Nouns
+sitemap:
+priority: 1.0
+vim: ts=3
+changefreq: weekly
+lastmod: Tue May 17 20:24:02 PDT 2016
+---
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+	var polishwords = document.querySelectorAll(".polish");
+	for (var i=0; i<polishwords.length; i++) {
+      var text = polishwords[i].textContent;
+		var output = "<a style='color:#300;' target='new' href=http://en.pons.com/translate/polish-english/";
+		output += text + ">" + text + "</a>";
+		output += " ";
+		output += "<a target='new' style='font-size:50%; color:#ccc'";
+		output += " href='http://forvo.com/word/";
+		output += text;
+		output += "/#pl";
+		output += "'>";
+      output += "&#9654;";
+		output += "</a>";
+		polishwords[i].innerHTML = output;
+	}
+});
+
+</script>
+
+<style>
+
+.polish {
+   color: #300;
+}
+
+.english {
+   color: #ccc;
+}
+
+.english::before {
+   color: #ccc;
+   content: "(";
+}
+
+.english::after {
+   color: #ccc;
+   content: ")";
+}
+
+.gray {
+   color: #ccc;
+}
+
+table.case {
+   margin: 50px;
+}
+
+.case td {
+   padding-right: 45px;
+}
+
+.case th {
+	color: goldenrod;
+   padding-right: 45px;
+}
+
+.case td:nth-child(n+2) {
+   font-weight: bold;
+	font-size: 200%;
+}
+
+.case td:first-child {
+   color: #ccc;
+}
+
+</style>
+
+<article class="about first">
+
+<h1> Noun genders and case ending </h1>
+
+<ul>
+<li> masculine &mdash; nominative typically ends in consonant.
+<li> feminine &nbsp;&nbsp;&nbsp;&mdash; nominative typically ends in <b>-a</b>,  <b>-i</b> if native word (rare).
+<li> neuter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&mdash; nominative typically ends in <b>-o</b> <b>-e</b> <b>-ę</b> or <b>-um</b>.
+</ul>
+
+Masculine exceptions:
+<ul>
+<li> words ending in <b>-ista</b> are person-masculine.
+<li> words ending in <b>-wca</b> are person-masculine.
+<li> <span class=polish>mężczyzna</span> <span class=english>man</span>
+<li> <span class=polish>tata</span> <span class=english>father</span>
+<li> <span class=polish>poeta</span> <span class=english>male poet</span>
+<li> <span class=polish>sędzia</span> <span class=english>judge</span>
+</ul>
+
+Feminine exceptions:
+<ul style="padding-bottom:0; margin-bottom:0">
+<li> words ending in <b>-ść</b> are usually feminine.
+</ul>
+<table width=700 style="padding:0; margin:0">
+<tr style="vertical-align:top"><td>
+<ul  style="padding-top:0; margin-top:0">
+<li> <span class=polish>gałąź</span> <span class=english>branch</span>
+<li> <span class=polish>jesień</span> <span class=english>autumn</span>
+<li> <span class=polish>łódź</span> <span class=english>boat or Polish city</span>
+<li> <span class=polish>myśl</span> <span class=english>thought</span>
+<li> <span class=polish>noc</span> <span class=english>night</span>
+<li> <span class=polish>podróż</span> <span class=english>journey</span>
+</ul>
+</td>
+
+<td>
+<ul  style="padding-top:0; margin-top:0">
+<li> <span class=polish>pomoc</span> <span class=english>help</span>
+<li> <span class=polish>postać</span> <span class=english>figure</span>
+<li> <span class=polish>północ</span> <span class=english>north and midnight</span>
+<li> <span class=polish>rzecz</span> <span class=english>thing</span>
+<li> <span class=polish>sól</span> <span class=english>salt</span>
+<li> <span class=polish>twarz</span> <span class=english>face</span>
+<li> <span class=polish>wieś</span> <span class=english>countryside</span>
+</ul>
+</td></tr>
+</table>
+
+Plural nouns
+<ul>
+<li> <span class=polish>grabie</span> <span class=english>rake</span>
+<li> <span class=polish>nożyce</span> <span class=english>scissors</span>
+<li> <span class=polish>skrzypce</span> <span class=english>violin</span>
+<li> <span class=polish>spodnie</span> <span class=english>pants</span>
+<li> <span class=polish>szczypce</span> <span class=english>pliers</span>
+</ul>
+
+
+<h1> <a href="https://en.wikibooks.org/wiki/Polish/Feminine_noun_declension">Feminine noun cases</a> </h1>
+
+
+<table class="case">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+
+<tr>
+	<td>Nominative</td>
+	<td> -a </td>					 <td> -y<span class=gray>/i</span> </td>
+</tr>
+
+<tr>
+	<td>Genitive</td>
+	<td> -y<span class=gray>/i</span> </td>					 <td> - </td>
+</tr>
+
+<tr>
+	<td>Dative</td>
+	<td> <span class="gray"><sup style="font-size:50%; font-weight:100;">kt</sup>c</span>-<span class="gray">(</span>i<span class="gray">)</span>e </td>					<td> -om </td>
+</tr>
+
+<tr>
+	<td>Accusative</td>
+	<td> -ę </td>					<td> -y<span class=gray>/i</span> </td>
+</tr>
+
+<tr>
+	<td>Instrumental</td>
+	<td> -ą </td>					 <td> -ami </td>
+</tr>
+
+<tr>
+	<td>Locative</td>
+	<td> <span class="gray"><sup style="font-size:50%; font-weight:100">kt</sup>c</span>-<span class="gray">(</span>i<span class="gray">)</span>e </td>					 <td> -ach </td>
+</tr>
+
+<tr>
+	<td>Vocative</td>
+	<td> -o </td>					 <td> -y<span class=gray>/i</span> </td>
+</tr>
+
+</table>
+
+
+<h1> <a href="https://en.wikibooks.org/wiki/Polish/Neuter_noun_declension">Neuter noun cases</a> </h1>
+
+
+<table class="case">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+
+<tr>
+	<td>Nominative</td>
+	<td> -o </td>					 <td> -a </td>
+</tr>
+
+<tr>
+	<td>Genitive</td>
+	<td> -a </td>					 <td> - </td>
+</tr>
+
+<tr>
+	<td>Dative</td>
+	<td> -u </td>					<td> -om </td>
+</tr>
+
+<tr>
+	<td>Accusative</td>
+	<td> -o </td>					<td> -a </td>
+</tr>
+
+<tr>
+	<td>Instrumental</td>
+	<td> -em </td>					 <td> -ami </td>
+</tr>
+
+<tr>
+	<td>Locative</td>
+	<td> -<span class="gray">i</span>e<span class="gray">/u</span> </td>					 <td> -ach </td>
+</tr>
+
+<tr>
+	<td>Vocative</td>
+	<td> -o </td>					 <td> -a<span class="gray">/i/y</span> </td>
+</tr>
+
+</table>
+
+
+Neuter nouns ending in "-e" or "-ę".
+
+
+<table class="case">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+
+<tr>
+	<td>Nominative</td>
+	<td> -e/ę </td>					 <td> -a </td>
+</tr>
+
+<tr>
+	<td>Genitive</td>
+	<td> -a </td>					 <td> - </td>
+</tr>
+
+<tr>
+	<td>Dative</td>
+	<td> -u </td>					<td> -om </td>
+</tr>
+
+<tr>
+	<td>Accusative</td>
+	<td> -e </td>					<td> -a </td>
+</tr>
+
+<tr>
+	<td>Instrumental</td>
+	<td> -em </td>					 <td> -ami </td>
+</tr>
+
+<tr>
+	<td>Locative</td>
+	<td> -u </td>					 <td> -ach </td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+</article>
+
+
+
