@@ -1,5 +1,5 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-	$("iframe").contentindow.focus();
+//	$("iframe").contentwindow.focus();
 });
