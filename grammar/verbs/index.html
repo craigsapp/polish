@@ -1,0 +1,263 @@
+---
+layout: home
+title: Verbs
+sitemap:
+priority: 1.0
+vim: ts=3
+changefreq: weekly
+lastmod: Thu Oct 19 22:24:26 PDT 2017
+---
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+	var polishwords = document.querySelectorAll(".polish");
+	for (var i=0; i<polishwords.length; i++) {
+      var text = polishwords[i].textContent;
+		var output = "<a style='color:#300;' target='new' href=http://en.pons.com/translate/polish-english/";
+		output += text + ">" + text + "</a>";
+		output += " ";
+		output += "<a target='new' style='font-size:50%; color:#ccc'";
+		output += " href='http://forvo.com/word/";
+		output += text;
+		output += "/#pl";
+		output += "'>";
+      output += "&#9654;";
+		output += "</a>";
+		polishwords[i].innerHTML = output;
+	}
+});
+
+</script>
+
+<style>
+
+span.afterverb {
+	color: darkviolet;
+	font-size: 0.5em;
+	font-family: Helvetica;
+}
+
+table.verblist tr td:nth-child(3) {
+	color: #aaaaaa;
+	font-size: 0.5em;
+	font-family: Helvetica;
+}
+
+table.verblist tr td:first-child, table.verblist td a {
+	color: firebrick;
+	font-size: 1.2em;
+}
+
+table.conjugation td:nth-child(2),
+table.conjugation td:nth-child(3) {
+	color: blue;
+}
+
+table.verblist tr td {
+	padding-right: 20px;
+}
+
+<table class="verblist">
+
+.polish {
+   color: #300;
+}
+
+.english {
+   color: #ccc;
+}
+
+.english::before {
+   color: #ccc;
+   content: "(";
+}
+
+.english::after {
+   color: #ccc;
+   content: ")";
+}
+
+.gray {
+   color: #ccc;
+}
+
+table.conjugation {
+   margin: 50px;
+}
+
+.conjugation td {
+   padding-right: 45px;
+}
+
+h3 {
+	color: #888888;
+	margin-left: 50px;
+}
+
+h1:not(:first-child) {
+	margin-top: 80px;
+}
+
+table.verblist {
+	margin-left: 50px;
+}
+
+.conjugation th {
+	color: goldenrod;
+   padding-right: 45px;
+}
+
+.conjugation td:nth-child(n+2) {
+   font-weight: bold;
+	font-size: 200%;
+}
+
+.conjugation td:first-child {
+   color: #ccc;
+}
+
+</style>
+
+<article class="about first">
+
+<h1> Type I verb conjugations </h1>
+
+<table class="conjugation">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+<tr>
+	<td>1st person</td>
+	<td> -ę </td>					 <td> -emy </td>
+</tr>
+<tr>
+	<td>2nd person</td>
+	<td> -esz </span> </td>					 <td> -ecie </td>
+</tr>
+<tr>
+	<td>3rd person</td>
+	<td> -e </td>					<td> -ą </td>
+</tr>
+</table>
+
+<h3> Example class I verbs: </h3>
+
+<table class="verblist">
+<tr><th> verb <span class="afterverb">+ case</span> </td><th> stem </td><th> translation</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/chcie%C4%87">chcieć</a> <span class="afterverb">+ G</span>	</td><td>	chc-	</td><td>	to want	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/dziękowa%C4%87">dziękować</a> <span class="afterverb">+ za + A</span>	</td><td>	dziękuj-	</td><td>	to thank for	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/jecha%C4%87">jechać</a>	</td><td>	jad-/jedzi-	</td><td>	to go	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/móc">móc</a> <span class="afterverb">+ Infintive</span>	</td><td>	mog-/moż-	</td><td>	to be able to	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/studiowa%C4%87">studiować</a>	</td><td>	studiuj-	</td><td>	to study	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/wejś%C4%87">wejść</a>	</td><td>	wejd-/wejdzi-	</td><td>	to enter	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/zawieź%C4%87">zawieźć</a>	</td><td>	zawioz-/zawiezi-	</td><td>	to carry	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/zosta%C4%87">zostać</a> <span class="afterverb">+ na + A</span>	</td><td>	zostan-/zostani-	</td><td>	to stay for	</td></tr>
+</table>
+
+<h1> Type II verb conjugations </h1>
+
+<table class="conjugation">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+<tr>
+	<td>1st person</td>
+	<td> -ę </td>					 <td> -imy </td>
+</tr>
+<tr>
+	<td>2nd person</td>
+	<td> -isz </span> </td>					 <td> -icie </td>
+</tr>
+<tr>
+	<td>3rd person</td>
+	<td> -i </td>					<td> -ą </td>
+</tr>
+</table>
+
+<h3> Example class II verbs: </h3>
+<table class="verblist">
+<tr><th> verb <span class="afterverb">+ case</span> </td><th> stem </td><th> translation</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/cieszy%C4%87">cieszyć</a> się <span class="afterverb">+ z + G</span>	</td><td>	ciesz-	</td><td>	to be glad	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/odwiedzi%C4%87">odwiedzić</a>	</td><td>	odwiedz-/owiedzi-	</td><td>	to visit	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/poznawa%C4%87">poznawać</a>	</td><td>	poznaj-	</td><td>	to recognize	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/prosi%C4%87">prosić</a>	</td><td>	prosz-/pros-	</td><td>	to ask	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/prezdstawi%C4%87">przedstawić</a>	</td><td>	przedstawi-/przedstaw-	</td><td>	to introduce	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/zobaczy%C4%87">zobaczyć</a>	</td><td>	zobacz-	</td><td>	to see	</td></tr>
+</table>
+
+<h1> Type III verb conjugations </h1>
+
+<table class="conjugation">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+<tr>
+	<td>1st person</td>
+	<td> -am </td>					 <td> -amy </td>
+</tr>
+<tr>
+	<td>2nd person</td>
+	<td> -asz </span> </td>					 <td> -acie </td>
+</tr>
+<tr>
+	<td>3rd person</td>
+	<td> -a </td>					<td> -ają </td>
+</tr>
+</table>
+
+<h3> Example class III verbs: </h3>
+<table class="verblist">
+<tr><th> verb <span class="afterverb">+ case</span> </td><th> stem </td><th> translation</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/czeka%C4%87">czekać</a> <span class="afterverb">+ na + A</span>	</td><td>	czek-	</td><td>	to wait for	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/mieszka%C4%87">mieszkać</a> <span class="afterverb">+ w + L</span>	</td><td>	mieszk-	</td><td>	to live	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/mie%C4%87">mieć</a>	</td><td>	m-	</td><td>	to have	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/pamięta%C4%87">pamiętać</a>	</td><td>	pamięt-	</td><td>	to remember	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/pozna%C4%87">poznać</a>	</td><td>	pozn-	</td><td>	to get to know	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/przeprasza%C4%87">przepraszać</a>	</td><td>	prezeprasz-	</td><td>	to be sorry	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/rozmawia%C4%87">rozmawiać</a> <span class="afterverb">+ z + I; + o + L</span>	</td><td>	rozmawi-	</td><td>	to talk	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/słycha%C4%87">słychać</a>	</td><td>	słuch-	</td><td>	to be heard	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/wraca%C4%87">wracać</a> <span class="afterverb">+ z + G</span>	</td><td>	wrac-	</td><td>	to come back	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/zna%C4%87">znać</a>	</td><td>	zn-	</td><td>	to know	</td></tr>
+</table>
+
+<h1> Type IV verb conjugations </h1>
+
+<table class="conjugation">
+<tr>
+	<th></th>
+	<th>Singular</th>
+	<th>Plural</th>
+</tr>
+<tr>
+	<td>1st person</td>
+	<td> -em </td>					 <td> -emy </td>
+</tr>
+<tr>
+	<td>2nd person</td>
+	<td> -esz </span> </td>					 <td> -ecie </td>
+</tr>
+<tr>
+	<td>3rd person</td>
+	<td> -e </td>					<td> -eją </td>
+</tr>
+</table>
+
+<h3> Example class IV verbs: </h3>
+<table class="verblist">
+<tr><th> verb <span class="afterverb">+ case</span> </td><th> stem </td><th> translation</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/opowiedzie%C4%87">opowiedzieć</a>	</td><td>	opowi-	</td><td>	to tell	</td></tr>
+<tr><td>	<a href="http://cooljugator.com/pl/wiedzie%C4%87">wiedzieć</a>	</td><td>	wi-	</td><td>	to know	</td></tr>
+</table>
+
+
+</article>
+
+
+
